@@ -1,6 +1,6 @@
 {
     "name": "botato",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "A cross platform botnet client that makes remote management easy",
     "main": "botato.js",
     "bin": "botato.js",
