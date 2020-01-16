@@ -11,17 +11,6 @@ module.exports = function(bot, from, args, out) {
                 fs.unlink(path.join(bot.path, 'screenshot.png'));
             }).catch(function(err) {
                 out('Failed to upload screenshot to imgur: ' + err.message);
-            });
+            }).catch((err) => {console.log(err)});
     })
-    
-    /*ds(path.join(bot.path, 'screenshot.png'), function(error, complete) {
-        if (error) {
-            out('Failed to get screenshot. Make sure you\'re not trying to run this command on a headless server');
-            console.log(error);
-        } else {
-            */
-            /*
-        }
-    });
-    */
 }
